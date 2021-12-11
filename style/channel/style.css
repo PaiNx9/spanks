@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+ 
+.channel-full {
+    margin-top: 70px;
+    max-width: 100%;
+    height: fit-content;
+}
+
+.banner_img {
+    width: 100%;
+    height: fit-content;
+    pointer-events: none;
+    user-select: none;
+    box-shadow: 1px -100vh 0px 100vh rgb(0, 0, 0);
+}
+
+.card-channel-profile {
+    position: absolute;
+    margin-top: -06px;
+    left: 0%;
+    height: 12%;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    transition: .3s ease-in-out;
+}
+
+.subscribe-channel {
+    position: absolute;
+    bottom: 40%;
+    margin-left: 70%;
+    height: 29px;
+    width: 100px;
+    background-color: #5704c4c9;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width:800px) {
+    .channel-full {
+        max-width: 100%;
+    }
+    .banner_img {
+        width: 100%;
+        height: fit-content;
+        box-shadow: 1px -100vh 0px 0vh rgb(0, 0, 0);
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+@media (max-width:685px) {
+    .channel-full{
+        margin-top: 85px;
+    }
+}
+
+.profile_channel {
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.cover_image {
+    border-radius: 150%;
+    height: 53px;
+    width: 53px;
+    overflow: hidden;
+}
+
+.title_channel {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.followers_channel {
+    color: rgb(194, 194, 194);
+    margin-left: 65px;
+    margin-top: -23px; 
+    font-size: 13px;
+}

@@ -1,0 +1,171 @@
+.comments_open {
+    position: absolute;
+    z-index: 5;
+    margin-top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70%;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid rgb(85, 85, 85);
+    background-color: rgb(53, 53, 53);
+    display: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+@media (max-width: 1215px) {
+    .comments_open {
+        height: 100%;
+    }
+}
+
+.profile-channel-cm {
+    margin-left: 8%;
+    margin-top: 35px;
+    width: fit-content;
+    height: 0rem;
+}
+
+.profile-channel-cm input {
+    border: none;
+    height: 28px;
+    width: 85px;
+    margin-left: 20px;
+    border-radius: 3px;
+    background-color: rgb(62,166,255);
+}
+
+.profile-channel-cm input:disabled {
+    background-color: rgb(95, 95, 95);
+    cursor: auto;
+}
+
+.profile-channel-cm  textarea {
+    position: relative;
+    bottom: -20px;
+    margin-left: 05px;
+    width: 45vw;
+    border: transparent;
+    background-color: rgba(128, 128, 128, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+    padding-bottom: 07px;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+}
+
+.btn-pst {
+    background-color: rgb(62,166,255);
+}
+
+#cmt {
+    resize: none;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.profile-channel-cm textarea:focus {
+    outline: 0;
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+}
+
+.alert-confirm {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    border-radius: 3px; 
+    color: rgb(235, 235, 235);
+    background-color: rgb(82, 82, 82);
+    visibility: hidden;
+}
+
+.others-comments {
+    margin-top: 40px;
+    color: white;
+}
+
+.profile-channel-cm-others {
+    margin-left: 0%;
+    margin-top: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.msg-others {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    height: fit-content;
+    width: 85%;
+    word-break: break-word;
+    text-align: start;
+}
+
+.comments_open::-webkit-scrollbar {
+    width: 13px;
+    /* width of the entire scrollbar */
+}
+  
+.comments_open::-webkit-scrollbar-track {
+    background: rgb(85, 85, 85);        /* color of the tracking area */
+  }
+  
+.comments_open::-webkit-scrollbar-thumb {
+    background-color: rgb(170, 170, 170);    /* color of the scroll thumb */
+    border-radius: 10px;/* roundness of the scroll thumb */
+    border: 2px solid rgb(85, 85, 85);  /* creates padding around scroll thumb */
+  }
+
+@media (max-width:1065px) {
+    .profile-channel-cm  textarea {
+        width:75vw;
+    }
+
+    .profile-channel-cm input {
+        margin-top: 35px;
+    }
+
+    .comments_open {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .comments_open hr {
+        margin-top: 150px;
+    }
+
+    .alert-confirm {
+        margin-top: 0px;
+    }
+
+    .comments_open::-webkit-scrollbar {
+        width: 11px;
+                   /* width of the entire scrollbar */
+      }
+}
+
+@media (max-width: 820px) {
+    .profile-channel-cm input {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-channel-cm  {
+        margin-left: 3%;
+        width: 91%;
+    }
+}

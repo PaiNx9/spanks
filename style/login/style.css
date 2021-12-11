@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html body {
+    background-color: rgb(43, 43, 43);
+    overflow-x: hidden;
+}
+
+::selection {
+    background: rgba(136, 79, 190, 0.89);
+    color: rgba(255, 255, 255, 0.89);
+}
+
+section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin: auto;
+}
+
+.card-login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 49%;
+    transform: translateX(-50%);
+    margin: auto;
+    height: 400px;
+    width: 360px;
+    background-color: rgb(73, 73, 73);
+}
+
+.overflow_sides {
+    overflow: hidden;
+    height: 100%;
+}
+
+.side-login {
+    visibility: visible;
+    opacity: 100%;
+    transition: .3s ease-in-out;
+    position: relative;
+    left: 0%;
+}
+
+.d3_up {
+    position: absolute;
+    margin-top: -71.5px;
+    z-index: -1;
+    left: 43.8%;
+    height: 8px;
+    width: 114.30%;
+    transform: rotate(-90deg) skew(-40deg);
+    background-color: rgb(111, 67, 153);
+}
+
+.d3_down {
+    position: absolute;
+    margin-top: 128.8px;
+    left: 0.94%;
+    z-index: -1;
+    height: 8px;
+    width: 100.42%;
+    transform: skew(40deg);
+    background-color: rgb(96, 60, 131);
+}
+
+.bord {
+    margin-top: -27px;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.title-header {
+    color: white;
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-header p {
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: 600;
+    color: rgb(201, 201, 201);
+}
+
+.main_footer_card {
+    margin-top: 20%;
+}
+
+.inputs_login {
+    position: relative;
+    bottom: 49px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 100%;
+}
+
+.inputs_login p{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.inputs_login a {
+    position: absolute;
+    margin-top: -67px;
+    left: 0;
+    width: fit-content;
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+br {
+    user-select: none;
+}
+
+input {
+    margin-top: 30px;
+    border-radius: 2px;
+    border-color: rgba(241, 241, 241, 0.083);
+    border-width: 1px;
+    border-style: solid;
+    width: 80%;
+    height: 35px;
+	padding: 5px;
+    font-style: normal;
+    color: #eeeeeee1;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2px;
+    border-radius: 4px;
+}
+
+input:hover {
+    border-color: rgba(241, 241, 241, 0.439);
+}
+
+input:focus {
+    outline: 0;
+    border-color: rgba(136, 79, 190, 0.89);
+    border-width: 2px;
+}
+
+.eye-pass {
+    position: relative;
+    bottom: -1px;
+    color: white;
+    height: 16px;
+    transition: .0s ease-in-out;
+}
+
+.eye-pass-alt {
+    position: relative;
+    bottom: 19px;
+    color: white;
+    height: 16px;
+    transition: .0s ease-in-out;
+    visibility: hidden;
+}
+
+.background-eyes {
+position: absolute;
+left: 70%;
+bottom: 7px;
+height: 20px;
+width: 30px;
+background-color: rgb(73, 73, 73);
+box-shadow: -5px 1px 3px 3px rgb(73, 73, 73);
+cursor: pointer;
+}
+
+.btn-next {
+    position: absolute;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    height: 30px;
+    width: 95px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(145,71,255);
+    cursor: pointer;
+}
+
+.main_footer_card a {
+    margin-top: 67px;
+}
+
+.main_footer_card a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.create_account {
+    position: absolute;
+    width: fit-content;
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    font-size: 13px;
+    top: 89%;
+    left: 10%;
+}
