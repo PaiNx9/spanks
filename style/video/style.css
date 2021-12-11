@@ -707,16 +707,15 @@ figcaption {
 
 @media (max-width:380px) {
     .views {
-        margin-left: -17%;
+        margin-left: -5%;
         margin-top: 25px;
-        top: 5px;
         transform: scale(0.8);
     }
 
     .icons-vid {
-        left: 29%;
-        top: 89%;
-        transform: scale(0.85);
+        left: 28%;
+        top: 89.5%;
+        transform: scale(0.8);
     }
 
     .data-posted {
@@ -727,11 +726,6 @@ figcaption {
 
     .views hr {
         display: none;
-    }
-
-    .icons-vid {
-        transform: scale(0.8);
-        left: 27%;
     }
 }
 
