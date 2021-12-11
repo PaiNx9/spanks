@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/jquery 3.5.1.js"></script>
+    <script src="javascript/video/plyr.js"></script>
+    <script src="javascript/lazyload.js"></script>
+    <link rel="stylesheet" href="style/video/plyr.css">
+    <link rel="stylesheet" href="style/video/style.css">
+    <link rel="stylesheet" href="style/video/style header.css">
+    <link rel="stylesheet" href="style/video/comments.css">
+    <link rel="stylesheet" href="style/video/thumb.css">
+    <link rel="shortcut icon" href="img/comprimidos/ico/ico.ico" type="image/x-icon">
+    <title></title>
+</head>
+
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="icon-header" onclick="return menubar()"><img src="img/comprimidos/icons/menu.svg" alt=""></div>
+                <div class="menu-drw">
+                    <div class="shadow" onclick="return exit()" ></div>
+                        <div class="menu-slide">
+                        <div class="drw-list">
+                            <div class="close-nav" onclick="return exit()" >
+                                <img src="img/comprimidos/icons/close.svg" alt="">
+                            </div>
+                            <div class="logo_of_nav">
+                                <img height="26px" src="img/comprimidos/logo/xpanks - compr - 150x40.png" alt="">
+                            </div>
+                        <ul class="options" >
+                        <a href="login.html">
+                            <li class="list">
+                              <span class="fa-li">
+                                <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                                  fill="currentColor"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                              </span>
+                                <p class="text">Login</p>
+                            </li>
+                        </a>
+                         
+                        <a href="login.html">
+                            <li class="list">
+                                <span class="fa-li">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M15.4857 20H19.4857C20.5903 20 21.4857 19.1046 21.4857 18V6C21.4857 4.89543 20.5903 4 19.4857 4H15.4857V6H19.4857V18H15.4857V20Z"
+                                      fill="currentColor"
+                                    />
+                                    <path
+                                      d="M10.1582 17.385L8.73801 15.9768L12.6572 12.0242L3.51428 12.0242C2.96199 12.0242 2.51428 11.5765 2.51428 11.0242C2.51429 10.4719 2.962 10.0242 3.51429 10.0242L12.6765 10.0242L8.69599 6.0774L10.1042 4.6572L16.4951 10.9941L10.1582 17.385Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </span>
+                                  <p class="text">Cadastrar</p>
+                              </li>
+                        </a> 
+
+                        <a href="login.html">
+                              <li class="list">
+                                <span class="fa-li">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M2 5.99519C2 5.44556 2.44556 5 2.99519 5H11.0048C11.5544 5 12 5.44556 12 5.99519C12 6.54482 11.5544 6.99039 11.0048 6.99039H2.99519C2.44556 6.99039 2 6.54482 2 5.99519Z"
+                                      fill="currentColor"
+                                    />
+                                    <path
+                                      d="M2 11.9998C2 11.4501 2.44556 11.0046 2.99519 11.0046H21.0048C21.5544 11.0046 22 11.4501 22 11.9998C22 12.5494 21.5544 12.9949 21.0048 12.9949H2.99519C2.44556 12.9949 2 12.5494 2 11.9998Z"
+                                      fill="currentColor"
+                                    />
+                                    <path
+                                      d="M2.99519 17.0096C2.44556 17.0096 2 17.4552 2 18.0048C2 18.5544 2.44556 19 2.99519 19H15.0048C15.5544 19 16 18.5544 16 18.0048C16 17.4552 15.5544 17.0096 15.0048 17.0096H2.99519Z"
+                                      fill="currentColor"
+                                    />
+                                </svg> 
+                                </span>
+                                  <p class="text">Categorias</p>
+                              </li>
+                        </a>
+
+                        <a href="login.html">
+                              <li class="list">
+                                <span class="fa-li">
+                                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
+    fill="currentColor"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 3C17.5915 3 22.2898 6.82432 23.6219 12C22.2898 17.1757 17.5915 21 12 21C6.40848 21 1.71018 17.1757 0.378052 12C1.71018 6.82432 6.40848 3 12 3ZM12 19C7.52443 19 3.73132 16.0581 2.45723 12C3.73132 7.94186 7.52443 5 12 5C16.4756 5 20.2687 7.94186 21.5428 12C20.2687 16.0581 16.4756 19 12 19Z"
+    fill="currentColor"
+  />
+                                </svg>
+                                </span>
+                                  <p class="text">Mais Vistos</p>
+                              </li>
+                        </a>
+
+                        <a href="login.html">
+                              <li class="list">
+                                <span class="fa-li">
+                                    <svg
+                                     xmlns="http://www.w3.org/2000/svg"
+                                      width="24" height="24" viewBox="0 0 24 24"
+                                       fill="none" stroke="currentColor" 
+                                       stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                         class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                </span>
+                                  <p class="text">Melhor avaliados</p>
+                              </li>
+                        </a>
+
+                        <a href="login.html">
+                              <li class="list">
+                                <span class="fa-li">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M19 20H17.1717L12.7072 15.5354C12.3166 15.1449 11.6835 15.1449 11.2929 15.5354L6.82843 20L5 20V7C5 5.34315 6.34315 4 8 4H16C17.6569 4 19 5.34314 19 7V20ZM17 7C17 6.44772 16.5523 6 16 6H8C7.44772 6 7 6.44772 7 7V17L9.87873 14.1212C11.0503 12.9497 12.9498 12.9497 14.1214 14.1212L17 16.9999V7Z"
+                                      fill="currentColor"
+                                    />
+                                    </svg>
+                                </span>
+                                  <p class="text">Recomendados</p>
+                              </li>
+                            </ul>
+                        </a>
+                        
+                            </div>
+                        </div>
+                    </div>
+        
+                <div class="logo-header">
+                <a href="index.html">
+                    <img src="img/comprimidos/logo/xpanks - compr - 150x40.png" height="37px" class="logo-header-img" alt="">
+                </a>
+                </div>
+        
+                <!--fix-->
+                
+                <!--fix-->
+        
+                <div class="search-header">
+                    <input placeholder="Procurar videos" spellcheck="false" type="text">
+                <div class="search-element">
+                    <img src="img/comprimidos/icons/search.svg" class="search-header-icon" alt="">
+                </div>
+                </div>
+        
+                <div class="welcomes">
+            <div class="welcome-header">
+                    <a href="1"><p class="welcome-create">Cadastrar</p></a>
+                    <a href="login.html"><p class="welcome-login">Login</p></a>
+                </div>
+                <div class="welcome-mobile">
+                <a href="login.html">
+                    <img src="img/comprimidos/icons/profile.svg" height="28px" alt="">
+                </a>
+                </div>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+
+<body>
+    <!--HTML5 Video tag-->
+<section>
+  <div class="playerr">
+      <div id="container">
+        <video muted controls data-poster="" class="vid1">
+        <!-- Video files -->
+        <source class="here" title="fsfsfsdf" src="video/1. BABY Internet ft Jotapills - 667 casa bomba_720P HD.mp4" type="video/mp4"  size="360" />
+        <source src="https://cdn.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4" type="video/mp4" size="720">
+      </video>
+      </div>
+      <div class="infos-vid">
+        <div class="title">90 caracteres maximo nesse campo de texto</div>
+        <div class="views"><p class="views-number">1.108.806</p><p style="padding-left: 4%;">views</p><hr></div>
+        <div class="data-posted"><p class="days">10</p><p>dias atrás</p></div>
+        <div class="profile-channel chan"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
+        <p class="title-channel">p@1Nn.ex3</a><p class="followers-channel">193 mil inscritos</p></p>
+        </div></a>
+        <div class="bar__">
+        <div class="line"></div>
+        <div style="margin-top: 80px;" class="line"></div>
+        <div class="icons-vid">
+          <div class="rating">
+            <div class="like">
+                <i class="gg-smile-mouth-open"></i>
+                <input name="r" disabled value="10" id="counter-like">
+                <figcaption>Marcar como "Gostei"</figcaption>
+            </div>
+            <div class="dislike">
+                <i class="gg-smile-sad"></i>
+                <input name="d" disabled id="counter-dislike" value="20" >
+                <figcaption>Marcar como "Não Gostei"</figcaption>
+            </div>
+        </div>
+        <div onclick="return opencm()" class="comments">
+          <figcaption>Comentarios</figcaption>
+            <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M17 9H7V7H17V9Z" fill="currentColor" />
+            <path d="M7 13H17V11H7V13Z" fill="currentColor" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z"
+              fill="currentColor"
+            />
+          </svg>
+        <p>Comentários</p>
+        </div>
+        <div class="download"><figcaption>Download</figcaption><a style="color: white;" href="video/Massaru, Igão - Marcha 2 (Prod. Celo) - EP Ⓜ️_720P HD.mp4" download>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z"
+              fill="currentColor"
+            />
+        <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor" /></svg></a><p>Download</p>
+        </div>
+        <div onclick="report()" class="report"><figcaption>Denunciar</figcaption>
+            <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M4 21H6V11H12V13H20V5H13V3H4V21ZM12 5H6V9H13V11H18V7H12V5Z"
+    fill="currentColor"
+  />
+</svg><p>Denunciar</p>
+        </div>
+        <div class="share"><figcaption>Compartilhar</figcaption>
+            <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M18 9C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3C16.3431 3 15 4.34315 15 6C15 6.12549 15.0077 6.24919 15.0227 6.37063L8.08261 9.84066C7.54305 9.32015 6.80891 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15C6.80891 15 7.54305 14.6798 8.08261 14.1593L15.0227 17.6294C15.0077 17.7508 15 17.8745 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C17.1911 15 16.457 15.3202 15.9174 15.8407L8.97733 12.3706C8.99229 12.2492 9 12.1255 9 12C9 11.8745 8.99229 11.7508 8.97733 11.6294L15.9174 8.15934C16.457 8.67985 17.1911 9 18 9Z"
+    fill="currentColor"
+  />
+</svg> 
+        
+<p>Compartilhar</p>
+        </div>
+      </div>
+      </div>
+      <div class="line-vid"></div>
+    </div>
+        <div class="comments_open">
+          <div class="comment-channel">
+            <div class="profile-channel-cm"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
+              <p class="title-channel">p@1Nn.ex3</a><p class="followers-channel">193 mil inscritos</p></p>
+              <textarea onKeyup="checkform()" id="cmt" maxlength="1000" rows="1" spellcheck="true" placeholder="Comente aqui" type="text"></textarea>
+              <input class="btn-post" disabled="disabled" id="submitbutton" type="submit" value="Postar">
+              <div class="alert-confirm">Comentario adicionado</div>
+              <div class="others-comments">
+                <p>Comentários <p id="to_counter"></p></p>
+              <div class="profile-channel-cm-others"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
+                    <p class="title-channel">p@1Nn.ex3</a></p>
+                     
+                    <p class="msg-others">dasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsad</p>
+              </div></a>
+
+              <div class="profile-channel-cm-others"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
+                <p class="title-channel">p@1Nn.ex3</a></p>
+                <p class="msg-others">dasadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsadasdsadsad</p>
+               </div></a>
+
+               <div class="profile-channel-cm-others"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
+                <p class="title-channel">p@1Nn.ex3</a></p>
+                <p class="msg-others">adsadasdsadsadasdsadsadasdsadsadasdsadsad</p>
+               </div></a>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    <div class="popup-report">
+      <div class="close_popup">
+        <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+    fill="currentColor"
+  />
+      </svg>
+      </div>
+      <h6>Motivo da denuncia:</h6>
+      <div class="sub_grp_popup">
+      <p>Pornografia infantil<input name="report" type="radio"></p>
+      <p>Spam<input name="report" class="customize green" checked type="radio" ></p>
+      <p>Infringe Meus Direitos<input name="report" type="radio" ></p>
+      <p>Não consensual<input name="report" type="radio" ></p>
+      <p>Prejudiciais ou Violentos <label for="report"></label><input name="report" type="radio" ></p>
+    </div>
+        <button>Denunciar</button>
+    </div>
+    <div class="shadow"></div>
+
+    <div class="xspanks-ads">
+      <p style="margin-bottom: 2px;">Anuncio Patrocinado</p>
+      <div class="ads_img">
+        <img class="ads_img_img" src="img/comprimidos/profile/channels4_profile.jpg" alt="">
+      </div>
+      <p>Anuncio Patrocinado</p>
+      <div class="line_ads"></div>
+      <div class="recommended">
+        <p class="title__">Recomendados</p>
+            <div class="grid-thumbs">
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <a class="link-vid" href="video.html"><img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt=""></a>
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">bimbo</a> - <p class="vid-views">1M Views</p> </p>
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <a class="link-vid" href="video copy.html"><img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt=""></a>
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">tron</a> - <p class="vid-views">1M Views</p> </p>
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">Rick and morty</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">Japoneco</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">capoeira mata um</a> - <p class="vid-views">1M Views</p> </p>
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">vinicius 13</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">carlinhos maia</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">jesus</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel lazy" style="margin-top: 2.5px;" height="15px" data-src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">nossa.com</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="thumb-col-x1">
+            <div class="thumb-vid">
+                <img data-src="img/comprimidos/thumbnail/banner-toronto-1-352x198.png" class="thumb-sz lazy" alt="">
+                <div class="thumb-time">
+                    8:00
+                </div>
+                <div class="info-vid">
+                    <p class="vid-title">
+                        Mãe do maureca
+                    </p>
+                <div class="channel-element">
+                    <div class="checking">
+                        <img class="check-channel" style="margin-top: 2.5px;" height="15px" src="img/comprimidos/icons/check-circle (6).svg" alt="">
+                        <figcaption>verificado</figcaption>
+                    </div>
+                    <a class="channel" href="#">
+                        <p class="vid-channel">2 homens e meio</a> - <p class="vid-views">1M Views</p> </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+    </div>
+  </div>
+  
+</div>
+</section>
+
+<!--                                 -->
+<!--        _/﹋\_                   -->
+<!--        (҂`_´)                   -->
+<!--        <,︻╦╤─ ҉ - -  @Pa1N.ex3 -->
+<!--        _/﹋\_                   -->
+
+    <style>
+
+
+      :root {
+      --plyr-color-main: #5704c4c9;
+        --plyr-video-control-color  :#cccccc;
+        --plyr-control-icon-size: 20px;
+        --plyr-font-size-time: 15px;
+        --plyr-video-range-track-background: rgba(255, 255, 255, 0.452);
+        --plyr-range-thumb-height: 11px;
+        
+    }
+     
+    @media (max-width:1000px) {
+        :root {
+        --plyr-control-icon-size: 18px;
+        --plyr-font-size-time: 14px;
+        --plyr-range-track-height: 5px;
+    }
+    }
+    
+    </style>
+
+<!--                                 -->
+<!--        _/﹋\_                   -->
+<!--        (҂`_´)                   -->
+<!--        <,︻╦╤─ ҉ - -  @Pa1N.ex3 -->
+<!--        _/﹋\_                   -->
+
+<script>
+    controls =
+  [
+      'play-large', // The large play button in the center
+      'play', // Play/pause playback
+      'progress', // The progress bar and scrubber for playback and buffering
+      'current-time', // The current time of playback
+      'duration', // The full duration of the media
+      'mute', // Toggle mute
+      'volume', // Volume control
+      'settings', // Settings menu
+      'fullscreen', // Toggle fullscreen
+  ];
+
+
+    const player = new Plyr('.vid1',{controls});
+</script>
+
+<script src="javascript/video/video.js"></script>
+</body>
+</html>
