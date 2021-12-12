@@ -556,7 +556,6 @@ figcaption {
     .icons-vid {
         top: 92%;
         left: 60%;
-        display: none;
     }
     .views {
         margin-left: 15%;
@@ -662,7 +661,6 @@ figcaption {
     .icons-vid {
         left: 31%;
         transform: scale(0.9);
-        display: none;
     }
 }
 
