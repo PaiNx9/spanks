@@ -32,8 +32,8 @@ onload=function(){
                 var x= $('#counter-like').val();
                 var y= $('#counter-dislike').val();
                 $('#counter-like').val(++x);
-                $(".gg-smile-mouth-open").css({"background-color" : "rgb(145,71,255)"});
-                $(".gg-smile-mouth-open").css({"border" : "2px solid rgb(145,71,255)"});
+                $(".gg-smile-mouth-open").css({"background-color" : "rgb(92,22,197)"});
+                $(".gg-smile-mouth-open").css({"border" : "2px solid rgb(92,22,197)"});
                 $(".likes-slider").css({"width" : "100%"});
                 $(".likes-slider").css({"opacity" : "100%"});
                 $(".dislike-slider").css({"width" : "0%"});
