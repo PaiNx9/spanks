@@ -655,6 +655,14 @@ figcaption {
         top: 90.5%;
         transform: scale(0.9);
     }
+
+    #counter-like {
+        margin-top: -4.5px;
+    }
+
+    #counter-dislike {
+        margin-top: -4.5px;
+    }
 }
 
 @media (max-width:420px) {
