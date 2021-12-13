@@ -703,7 +703,7 @@ figcaption {
 
 @media (max-width: 410px) {
     .icons-vid {
-        left: 27.5%;
+        left: 28.5%;
         transform: scale(0.9);
     }
 
@@ -728,7 +728,7 @@ figcaption {
 
 @media (max-width:395px) {
     .icons-vid {
-        left: 27%;
+        left: 26%;
         transform: scale(0.85);
     }
 
@@ -762,7 +762,7 @@ figcaption {
     }
 }
 
-@media (max-width:362px) {
+@media (max-width:365px) {
     .views {
         margin-left: -8%;
     }
@@ -779,7 +779,7 @@ figcaption {
 
     .icons-vid {
         transform: scale(0.8);
-        left: 26%;
+        left: 22.5%;
     }
     .rating {
         left: 11%;
@@ -803,7 +803,7 @@ figcaption {
 
     .icons-vid {
         transform: scale(0.7);
-        left: 21.5%;
+        left: 20%;
     }
     .rating {
         left: 11%;
@@ -821,7 +821,7 @@ figcaption {
     }
 
     .icons-vid {
-        left: 20.5%;
+        left: 16.5%;
     }
 }
 
