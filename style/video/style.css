@@ -657,23 +657,19 @@ figcaption {
 
     .icons-vid {
         top: 90.5%;
-        transform: scale(0.9);
-    }
-
-    .icons-vid {
         left: 30%;
         transform: scale(0.9);
     }
 
     #counter-like {
-        margin-top: 14.5px;
+        margin-top: 16.5px;
         left: -18.5px;
         text-align: center;
     }
 
     #counter-dislike {
-        margin-top: 14.5px;
-        left: -18.5px;
+        margin-top: 16.5px;
+        left: -18.4px;
         text-align: center;
     }
 
@@ -682,14 +678,13 @@ figcaption {
         margin-left: -46%;
     }
 
-    
-.like{
-    position: relative;
-    margin-right: 37px;
-    display: inline-flex;
-    cursor: pointer;
-    transition: .015s ease-in-out;
-}
+    .like {
+        margin-right: 34px;
+        display: inline-flex;
+        cursor: pointer;
+        transition: .015s ease-in-out;
+        position: relative;
+    }
 }
 
 @media (max-width:420px) {
