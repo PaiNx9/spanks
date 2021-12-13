@@ -77,8 +77,8 @@ onload=function(){
             var y= $('#counter-dislike').val();
             var x= $('#counter-like').val();
             $('#counter-dislike').val(++y);
-            $(".gg-smile-sad").css({"border" : "2px solid rgb(145,71,255)"});
-            $(".gg-smile-sad").css({"background-color" : "rgb(145,71,255)"});
+            $(".gg-smile-sad").css({"border" : "2px solid rgb(92,22,197)"});
+            $(".gg-smile-sad").css({"background-color" : "rgb(92,22,197)"});
             $(".dislike-slider").css({"width" : "100%"});
             $(".dislike-slider").css({"opacity" : "100%"});
             $(".likes-slider").css({"width" : "0%"});
