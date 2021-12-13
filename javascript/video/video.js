@@ -33,7 +33,7 @@ onload=function(){
                 var y= $('#counter-dislike').val();
                 $('#counter-like').val(++x);
                 $(".gg-smile-mouth-open").css({"background-color" : "rgb(145,71,255)"});
-                $(".gg-smile-mouth-open").css({"border" : "2px solid white"});
+                $(".gg-smile-mouth-open").css({"border" : "2px solid rgb(145,71,255)"});
                 $(".likes-slider").css({"width" : "100%"});
                 $(".likes-slider").css({"opacity" : "100%"});
                 $(".dislike-slider").css({"width" : "0%"});
@@ -77,7 +77,7 @@ onload=function(){
             var y= $('#counter-dislike').val();
             var x= $('#counter-like').val();
             $('#counter-dislike').val(++y);
-            $(".gg-smile-sad").css({"border" : "2px solid white"});
+            $(".gg-smile-sad").css({"border" : "2px solid rgb(145,71,255)"});
             $(".gg-smile-sad").css({"background-color" : "rgb(145,71,255)"});
             $(".dislike-slider").css({"width" : "100%"});
             $(".dislike-slider").css({"opacity" : "100%"});
