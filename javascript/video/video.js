@@ -5,25 +5,10 @@ onload=function(){
     //SEO title pagina//
     var title = $('.title').text();
     document.title = title;
+    //lazy load//
     $("img.lazy").lazyload();
     $("img.lazy").show().lazyload();
 }
-
-function detectar_mobile() { 
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)
-    ){
-       $("figcaption").css({"display":"none"})
-     }
-    else {
-        $("figcaption").css({"display":"block"})
-     }
-   }
 
     //init page//
 
@@ -47,8 +32,8 @@ function detectar_mobile() {
                 var x= $('#counter-like').val();
                 var y= $('#counter-dislike').val();
                 $('#counter-like').val(++x);
-                $(".gg-smile-mouth-open").css({"background-color" : "rgb(83,5,185)"});
-                $(".gg-smile-mouth-open").css({"border" : "2px solid #5e02d6c9"});
+                $(".gg-smile-mouth-open").css({"background-color" : "rgb(145,71,255)"});
+                $(".gg-smile-mouth-open").css({"border" : "2px solid rgb(145,71,255)"});
                 $(".likes-slider").css({"width" : "100%"});
                 $(".likes-slider").css({"opacity" : "100%"});
                 $(".dislike-slider").css({"width" : "0%"});
@@ -92,8 +77,8 @@ function detectar_mobile() {
             var y= $('#counter-dislike').val();
             var x= $('#counter-like').val();
             $('#counter-dislike').val(++y);
-            $(".gg-smile-sad").css({"border" : "2px solid #5e02d6c9"});
-            $(".gg-smile-sad").css({"background-color" : "rgb(83,5,185)"});
+            $(".gg-smile-sad").css({"border" : "2px solid rgb(145,71,255)"});
+            $(".gg-smile-sad").css({"background-color" : "rgb(145,71,255)"});
             $(".dislike-slider").css({"width" : "100%"});
             $(".dislike-slider").css({"opacity" : "100%"});
             $(".likes-slider").css({"width" : "0%"});
