@@ -181,9 +181,9 @@ section {
 
 #counter-dislike {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    width: 2.2rem;
-    left: 22px;
+    background-color: rgba(130, 34, 34, 0);
+    width: 3.5rem;
+    left: 19px;
     margin-top: -6px;
     border: none;
     font-size: 13px;
@@ -194,9 +194,9 @@ section {
 
 #counter-like {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    width: 2.2rem;
-    left: 20px;
+    background-color: rgba(126, 54, 54, 0);
+    width: 3.5rem;
+    left: 19px;
     margin-top: -6px;
     border: none;
     font-size: 13px;
@@ -667,12 +667,14 @@ figcaption {
 
     #counter-like {
         margin-top: 14.5px;
-        left: -03px;
+        left: -18.5px;
+        text-align: center;
     }
 
     #counter-dislike {
         margin-top: 14.5px;
-        left: -03px;
+        left: -18.5px;
+        text-align: center;
     }
 
     .rating {
@@ -683,7 +685,7 @@ figcaption {
     
 .like{
     position: relative;
-    margin-right: 40px;
+    margin-right: 37px;
     display: inline-flex;
     cursor: pointer;
     transition: .015s ease-in-out;
