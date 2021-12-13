@@ -1,4 +1,4 @@
-
+//init page//
 onload=function(){
     var alt = $(this).next("img").attr("alt");
     document.body.style.opacity="100%";
@@ -8,7 +8,26 @@ onload=function(){
     $("img.lazy").lazyload();
     $("img.lazy").show().lazyload();
 }
-            //like function//
+
+function detectar_mobile() { 
+    if( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+    ){
+       $("figcaption").css({"display":"none"})
+     }
+    else {
+        $("figcaption").css({"display":"block"})
+     }
+   }
+
+    //init page//
+
+    //like function//
 
             cont = 0;
             $( ".like" ).click(function() {  
