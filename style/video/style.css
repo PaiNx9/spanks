@@ -550,6 +550,10 @@ figcaption {
     .icons-vid {
         top: 93.5%;
     }
+
+    figcaption {
+        display: none;
+    }
 }
 
 @media (max-width: 700px)  {
@@ -807,7 +811,7 @@ figcaption {
 .popup-report {
     position: fixed;
     z-index: 20;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(43, 43, 43);
