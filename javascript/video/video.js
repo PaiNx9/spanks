@@ -28,7 +28,7 @@ onload=function(){
                 var x= $('#counter-like').val();
                 var y= $('#counter-dislike').val();
                 $('#counter-like').val(++x);
-                $(".gg-smile-mouth-open").css({"background-color" : "#5e02d6c9"});
+                $(".gg-smile-mouth-open").css({"background-color" : "rgb(83,5,185)"});
                 $(".gg-smile-mouth-open").css({"border" : "2px solid #5e02d6c9"});
                 $(".likes-slider").css({"width" : "100%"});
                 $(".likes-slider").css({"opacity" : "100%"});
@@ -61,7 +61,6 @@ onload=function(){
                   {
                  w();
                   cont2 += 1;
-                  localStorage.removeItem("like-review");
                   }
               else 
                   {
@@ -75,7 +74,7 @@ onload=function(){
             var x= $('#counter-like').val();
             $('#counter-dislike').val(++y);
             $(".gg-smile-sad").css({"border" : "2px solid #5e02d6c9"});
-            $(".gg-smile-sad").css({"background-color" : "#5e02d6c9"});
+            $(".gg-smile-sad").css({"background-color" : "rgb(83,5,185)"});
             $(".dislike-slider").css({"width" : "100%"});
             $(".dislike-slider").css({"opacity" : "100%"});
             $(".likes-slider").css({"width" : "0%"});
@@ -165,9 +164,7 @@ onload=function(){
                     $(".shadow").css({"visibility":"visible"});
                     
                 }
-
                 
-
                 $(".shadow").click(function() {
                     $(".shadow").css({"visibility":"hidden"});
                     $(".shadow").css({"opacity":"0%"});
@@ -184,10 +181,6 @@ onload=function(){
 
 
         //video-cfg fullscreen//
-                lou = false
-        $("use").click(function() {
-                $('#container video').css({"max-height" : "7000px"});
-        });
 
     
         this.fullScreenMode = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen; // This will return true or false depending on if it's full screen or not.
