@@ -660,18 +660,39 @@ figcaption {
         transform: scale(0.9);
     }
 
+    .icons-vid {
+        left: 30%;
+        transform: scale(0.9);
+    }
+
     #counter-like {
-        margin-top: -4.5px;
+        margin-top: 14.5px;
+        left: -03px;
     }
 
     #counter-dislike {
-        margin-top: -4.5px;
+        margin-top: 14.5px;
+        left: -02px;
     }
+
+    .rating {
+        bottom: 15px;
+        margin-left: -46%;
+    }
+
+    
+.like{
+    position: relative;
+    margin-right: 40px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: .015s ease-in-out;
+}
 }
 
 @media (max-width:420px) {
     .icons-vid {
-        left: 31.5%;
+        left: 29.5%;
         transform: scale(0.9);
     }
 
@@ -681,6 +702,11 @@ figcaption {
 }
 
 @media (max-width: 410px) {
+    .icons-vid {
+        left: 27.5%;
+        transform: scale(0.9);
+    }
+
     .views {
         margin-left: -14%;
     }
@@ -702,7 +728,7 @@ figcaption {
 
 @media (max-width:395px) {
     .icons-vid {
-        left: 30%;
+        left: 27%;
         transform: scale(0.85);
     }
 
@@ -714,9 +740,6 @@ figcaption {
         transform: scale(0.8);
         margin-left: -4.5%;
     }
-    .rating {
-        transform: scale(1.1);
-    }
 }
 
 @media (max-width:380px) {
@@ -725,7 +748,7 @@ figcaption {
     }
 
     .icons-vid {
-        left: 28.5%;
+        left: 25.5%;
         top: 89.5%;
         transform: scale(0.8);
     }
@@ -790,6 +813,21 @@ figcaption {
 @media (max-width:337px) {
     .views {
         margin-left: -16%;
+        transform: scale(0.8);
+    }
+
+    .rating {
+        transform: scale(1.1);
+    }
+
+    .icons-vid {
+        left: 20.5%;
+    }
+}
+
+@media (max-width:320px) {
+    .views {
+        margin-left: -22%;
         transform: scale(0.8);
     }
 

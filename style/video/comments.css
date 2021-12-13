@@ -8,7 +8,7 @@
     width: 80%;
     border-radius: 3px;
     border: 1px solid rgb(85, 85, 85);
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(46, 46, 46);
     display: none;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -120,13 +120,13 @@
 }
   
 .comments_open::-webkit-scrollbar-track {
-    background: rgb(85, 85, 85);        /* color of the tracking area */
+    background-color: rgb(46, 46, 46);        /* color of the tracking area */
   }
   
 .comments_open::-webkit-scrollbar-thumb {
-    background-color: rgb(170, 170, 170);    /* color of the scroll thumb */
-    border-radius: 10px;/* roundness of the scroll thumb */
-    border: 2px solid rgb(85, 85, 85);  /* creates padding around scroll thumb */
+    background: rgb(172, 172, 172);
+    border: 3px solid rgb(46, 46, 46);
+    border-radius: 10px;  /* creates padding around scroll thumb */
   }
 
 @media (max-width:1065px) {
