@@ -538,6 +538,7 @@ figcaption {
 
     .title {
         margin-left: 26px;
+        width: 78vw;
     }
 }
 
@@ -569,8 +570,7 @@ figcaption {
 
 @media (max-width: 585px) {
     .views {
-        margin-left: 5%;
-        top: 5px;
+        margin-left: 11%;
     }
 
     .views {
@@ -590,8 +590,7 @@ figcaption {
 
 @media (max-width: 525px) {
     .views {
-        margin-left: 0%;
-        top: 5px;
+        margin-left: 5%;
     }
 
     .icons-vid {
@@ -604,9 +603,12 @@ figcaption {
 
 @media (max-width: 490px) {
     .views {
-        margin-left: -8%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -0%;
+        top: 13px;
+    }
+
+    .data-posted {
+        top: 13px;
     }
 
     .icons-vid {
@@ -628,9 +630,7 @@ figcaption {
             transform: scale(0.9);
         }
         .views {
-            margin-left: -05%;
-            margin-top: 25px;
-            top: 5px;
+            margin-left: -02%;
         }
 
         .title {
@@ -640,17 +640,13 @@ figcaption {
 
 @media (max-width: 460px) {
     .views {
-        margin-left: -11%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -06%;
     }
 }
 
 @media (max-width: 440px) {
     .views {
-        margin-left: -16%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -09%;
         transform: scale(0.85);
     }
 
@@ -678,18 +674,20 @@ figcaption {
         left: 31.5%;
         transform: scale(0.9);
     }
+
+    .views {
+        margin-left: -13%;
+    }
 }
 
 @media (max-width: 410px) {
     .views {
-        margin-left: -20%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -14%;
     }
 
     .data-posted {
         transform: scale(0.8);
-        margin-left: -5%;
+        margin-left: -4.5%;
     }
 
     .profile-channel {
@@ -699,7 +697,6 @@ figcaption {
 
     .title {
         margin-left: 14px;
-        width: 78vw;
     }
 }
 
@@ -710,9 +707,7 @@ figcaption {
     }
 
     .views {
-        margin-left: -25%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -21%;
     }
 
     .data-posted {
@@ -726,19 +721,16 @@ figcaption {
 
 @media (max-width:380px) {
     .views {
-        margin-left: -5%;
-        margin-top: 25px;
+        margin-left: -3%;
     }
 
     .icons-vid {
-        left: 28%;
+        left: 28.5%;
         top: 89.5%;
         transform: scale(0.8);
     }
 
     .data-posted {
-        transform: scale(0.8);
-        margin-left: -5.5%;
         display: none;
     }
 
@@ -749,9 +741,7 @@ figcaption {
 
 @media (max-width:362px) {
     .views {
-        margin-left: -10%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -8%;
     }
 
     .data-posted {
@@ -776,8 +766,6 @@ figcaption {
 @media (max-width:340px) {
     .views {
         margin-left: -12%;
-        margin-top: 25px;
-        top: 5px;
     }
 
     .data-posted {
@@ -801,9 +789,7 @@ figcaption {
 
 @media (max-width:337px) {
     .views {
-        margin-left: -19%;
-        margin-top: 25px;
-        top: 5px;
+        margin-left: -16%;
         transform: scale(0.8);
     }
 
