@@ -30,6 +30,7 @@
     grid-template-rows: repeat(6, 13.5vmax);
     z-index: 0;
     color: rgb(230, 230, 230);
+    text-align: start;
 }
 
 
