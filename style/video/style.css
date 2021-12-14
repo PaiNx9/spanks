@@ -173,7 +173,7 @@ section {
 
 .like{
     position: relative;
-    margin-right: 50px;
+    margin-right: 47px;
     display: inline-flex;
     cursor: pointer;
     transition: .015s ease-in-out;
