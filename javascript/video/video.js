@@ -22,12 +22,13 @@ onload=function(){
  || navigator.userAgent.match(/Windows Phone/i)
  ){
      // Share mobile function
+    var url = $(location).attr('href');
     $(".share").click(function() {
         if (navigator.share) {
             navigator.share({
               title: 'web.dev',
               text: 'Check out web.dev.',
-              url: 'https://web.dev/',
+              url: url,
             })
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
