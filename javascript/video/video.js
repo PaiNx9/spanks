@@ -32,6 +32,7 @@ onload=function(){
               .catch((error) => console.log('Error sharing', error));
 
             $(".popup-share").css({"display" : "none"});
+            $(".s_share").css({"display" : "none"});
           }
     }) // on mobile
   }
@@ -212,9 +213,9 @@ onload=function(){
             //share popup
 
             $(".share").click(function() {
-                $(".popup-share").css({"display":"block"});
-                $(".shadow").css({"opacity":"100%"});
-                $(".shadow").css({"visibility":"visible"});
+                $(".popup-share").css({"visibility":"visibility"});
+                $(".s_share").css({"opacity":"100%"});
+                $(".s_share").css({"visibility":"visible"});
             })
             
             
