@@ -33,9 +33,6 @@ onload=function(){
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
 
-            // for popups desktop
-            $(".popup-share").css({"display" : "none"});
-            $(".shadow_share").css({"display" : "none"});
           }
     }) // on mobile
   }
