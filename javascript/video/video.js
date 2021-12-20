@@ -26,21 +26,21 @@ onload=function(){
     $(".share").click(function() {
         if (navigator.share) {
             navigator.share({
-              title: 'web.dev',
-              text: 'Check out web.dev.',
+              title: '',
+              text: '',
               url: url,
             })
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
 
-            // for popups
+            // for popups desktop
             $(".popup-share").css({"display" : "none"});
             $(".shadow_share").css({"display" : "none"});
           }
     }) // on mobile
   }
  else {
-    return false; // not mobile-
+    return false; // not mobile
   }
  })
 
@@ -65,7 +65,7 @@ onload=function(){
                   }
             });
 
-            function a(){
+            function a(){ //enter val and style
                 var x= $('#counter-like').val();
                 var y= $('#counter-dislike').val();
                 $('#counter-like').val(++x);
@@ -80,7 +80,7 @@ onload=function(){
                 }
             }
             
-            function b(){
+            function b(){ //exit val and style
                 var x= $('#counter-like').val();
                 $('#counter-like').val(--x);
                 $(".gg-smile-mouth-open").css({"border" : "2px solid white"});
@@ -105,7 +105,7 @@ onload=function(){
                   }
             });
             
-        function w(){
+        function w(){ //enter val and style
             var y= $('#counter-dislike').val();
             var x= $('#counter-like').val();
             $('#counter-dislike').val(++y);
@@ -124,7 +124,7 @@ onload=function(){
         }
 
 
-    function v(){
+    function v(){ //exit val and style
     var y= $('#counter-dislike').val();
         $('#counter-dislike').val(--y);
         $(".gg-smile-sad").css({"border" : "2px solid white"});
@@ -135,7 +135,7 @@ onload=function(){
 
             //dislike function//
 
-            //navbar//
+            //navbar
             function menubar(){
             if ($(this).toggle('.menu-drw').toggle) {
                     $(".menu-drw").css({"left" : "225.5px"});
@@ -154,9 +154,9 @@ onload=function(){
                 $(".menu-drw").css({"visibility" : "hidden"});
                 $(".menu-drw").css({"opacity" : "0"});
                 }}
-             //navbar//
+             //navbar
         
-            //open comments//
+            //open comments
                 opening = false;
                 var count = $('.profile-channel-cm-others').length;
             $(".comments").click(function() {
