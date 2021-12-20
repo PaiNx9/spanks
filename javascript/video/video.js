@@ -14,6 +14,9 @@ onload=function(){
 
     //like function//
 
+            const mil = " mil";
+            const nt = "";
+            mi = " mi"
             cont = 0;
             $( ".like" ).click(function() {  
                 if(cont == 0)
@@ -21,7 +24,7 @@ onload=function(){
                  a();
                   cont += 1;
                   }
-              else
+              else 
                   {
                   b();
                   cont = 0;
@@ -34,9 +37,6 @@ onload=function(){
                 $('#counter-like').val(++x);
                 $(".gg-smile-mouth-open").css({"background-color" : "rgb(92,22,197)"});
                 $(".gg-smile-mouth-open").css({"border" : "2px solid rgb(92,22,197)"});
-                $(".likes-slider").css({"width" : "100%"});
-                $(".likes-slider").css({"opacity" : "100%"});
-                $(".dislike-slider").css({"width" : "0%"});
                 if (cont2 == 1) {
                     cont2 = 0;
                 var y= $('#counter-dislike').val();
@@ -51,8 +51,6 @@ onload=function(){
                 $('#counter-like').val(--x);
                 $(".gg-smile-mouth-open").css({"border" : "2px solid white"});
                 $(".gg-smile-mouth-open").css({"background-color" : "transparent"});
-                $(".likes-slider").css({"width" : "0%"});
-                $(".dislike-slider").css({"width" : "0%"});
             }
 
             //like function//
@@ -183,46 +181,16 @@ onload=function(){
 
             //report pop-up//
 
-
-        //video-cfg fullscreen//
-
-    
-        this.fullScreenMode = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen; // This will return true or false depending on if it's full screen or not.
-
-        $(document).on ('mozfullscreenchange webkitfullscreenchange fullscreenchange',function(){
-               this.fullScreenMode = !this.fullScreenMode;
-              simulateFullScreen();
-         });
-        
-        
-        var simulateFullScreen = function() {
-             if(this.fullScreenMode) {
-                    docElm = document.documentElement
-                    if (docElm.requestFullscreen) 
-                    $('#container video').css({"max-height" : "700px"});
-                    else{
-                        if (docElm.mozRequestFullScreen) 
-                        $('#container video').css({"max-height" : "700px"});
-                        else{
-                           if (docElm.webkitRequestFullScreen)
-                           $('#container video').css({"max-height" : "700px"});
-                        }
-                    }
-             }else{
-                     if (document.exitFullscreen) 
-                     $('#container video').css({"max-height" : "7000px"});
-                     else{ 
-                          if (document.mozCancelFullScreen) 
-                          $('#container video').css({"max-height" : "7000px"});
-                          else{
-                             if (document.webkitCancelFullScreen) 
-                             $('#container video').css({"max-height" : "7000px"});
-                          }
-                     }
-             }
-        
-             this.fullScreenMode= !this.fullScreenMode
-        
-        }
-        //video-cfg fullscreen//
-
+            //share button//
+            $(".share").click(function() {
+                if (navigator.share) {
+                    navigator.share({
+                      title: 'web.dev',
+                      text: 'Check out web.dev.',
+                      url: 'https://web.dev/',
+                    })
+                      .then(() => console.log('Successful share'))
+                      .catch((error) => console.log('Error sharing', error));
+                  }
+            })
+              //share button//

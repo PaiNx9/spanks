@@ -1463,7 +1463,7 @@
                 blankVideo: "https://cdn.plyr.io/static/blank.mp4",
                 quality: { default: 480, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240], forced: !1, onChange: null },
                 loop: { active: !1 },
-                speed: { selected: 1, options: [0.5, 1,] },
+                speed: { selected: 1, options: [0.5, 1, 1.25] },
                 keyboard: { focused: !0, global: !1 },
                 tooltips: { controls: !1, seek: !0 },
                 captions: { active: !1, language: "auto", update: !1 },
