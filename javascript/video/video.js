@@ -1,4 +1,4 @@
-//init page//
+//init page
 onload=function(){
     var alt = $(this).next("img").attr("alt");
     document.body.style.opacity="100%";
@@ -10,9 +10,37 @@ onload=function(){
     $("img.lazy").show().lazyload();
 }
 
-    //init page//
+ //Detect Mobile
 
-    //like function//
+ $( document ).ready(function() {
+    if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    $(".share").click(function() {
+        if (navigator.share) {
+            navigator.share({
+              title: 'web.dev',
+              text: 'Check out web.dev.',
+              url: 'https://web.dev/',
+            })
+              .then(() => console.log('Successful share'))
+              .catch((error) => console.log('Error sharing', error));
+          }
+    }) // está utilizando celular
+  }
+ else {
+    return false; // não é celular
+  }
+ })
+
+    //init page
+
+    //like function
 
             const mil = " mil";
             const nt = "";
@@ -182,15 +210,5 @@ onload=function(){
             //report pop-up//
 
             //share button//
-            $(".share").click(function() {
-                if (navigator.share) {
-                    navigator.share({
-                      title: 'web.dev',
-                      text: 'Check out web.dev.',
-                      url: 'https://web.dev/',
-                    })
-                      .then(() => console.log('Successful share'))
-                      .catch((error) => console.log('Error sharing', error));
-                  }
-            })
+            
               //share button//
