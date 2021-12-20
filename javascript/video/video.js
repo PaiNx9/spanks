@@ -26,9 +26,9 @@ onload=function(){
     $(".share").click(function() {
         if (navigator.share) {
             navigator.share({
-              title: '',
-              text: '',
-              url: url,
+                title: 'web.dev',
+                text: 'Check out web.dev.',
+                url: 'https://web.dev/',
             })
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
