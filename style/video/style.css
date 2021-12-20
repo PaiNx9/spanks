@@ -21,6 +21,10 @@ section {
 }
 
 
+#container video {
+    user-select: none;
+}
+
 @media (max-width:1000px) {
     .playerr {
         top: 70px;
@@ -115,7 +119,7 @@ section {
     text-decoration: none;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    height: fit-content;
+    height: 14px;
 }
 
 .channel-link:hover a{
@@ -203,6 +207,10 @@ section {
     text-align: start;
     cursor: pointer;
 }
+
+#counter-like::after {
+    content: '%';
+  }
 
 figcaption {
     position: absolute;
@@ -559,7 +567,7 @@ figcaption {
 
 @media (max-width: 700px)  {
     .icons-vid {
-        top: 92%;
+        top: 92.4%;
         left: 60%;
     }
     .views {
