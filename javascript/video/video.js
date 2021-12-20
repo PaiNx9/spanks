@@ -26,13 +26,16 @@ onload=function(){
     $(".share").click(function() {
         if (navigator.share) {
             navigator.share({
-                title: 'web.dev',
-                text: 'Check out web.dev.',
-                url: 'https://web.dev/',
+              title: '',
+              text: '',
+              url: url,
             })
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
 
+            // for popups desktop
+            $(".popup-share").css({"display" : "none"});
+            $(".shadow_share").css({"display" : "none"});
           }
     }) // on mobile
   }
