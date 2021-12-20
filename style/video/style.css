@@ -926,6 +926,21 @@ figcaption {
     cursor: pointer;
 }
 
+.popup-share {
+    position: fixed;
+    z-index: 20;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(43, 43, 43);
+    height: 350px;
+    width: 300px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.616);
+    border-radius: 3px;
+    display: none;
+    overflow: hidden;
+}
+
 .xspanks-ads {
     position: absolute;
     top: 102%;
