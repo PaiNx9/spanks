@@ -1,16 +1,16 @@
-//init page
+// init page
 onload=function(){
     var alt = $(this).next("img").attr("alt");
     document.body.style.opacity="100%";
-    //SEO title pagina//
+    // SEO title pagina
     var title = $('.title').text();
     document.title = title;
-    //lazy load//
+    // lazy load
     $("img.lazy").lazyload();
     $("img.lazy").show().lazyload();
 }
 
- //Detect Mobile
+ // Detect Mobile
 
  $( document ).ready(function() {
     if( navigator.userAgent.match(/Android/i)
@@ -30,17 +30,19 @@ onload=function(){
             })
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
+
+            $(".popup-share").css({"display" : "none"});
           }
-    }) // está utilizando celular
+    }) // on mobile
   }
  else {
-    return false; // não é celular
+    return false; // not mobile-
   }
  })
 
-    //init page
+    // init page
 
-    //like function
+    // like function
 
             const mil = " mil";
             const nt = "";
@@ -192,7 +194,6 @@ onload=function(){
                     $(".popup-report").css({"display":"block"});
                     $(".shadow").css({"opacity":"100%"});
                     $(".shadow").css({"visibility":"visible"});
-                    
                 }
                 
                 $(".shadow").click(function() {
@@ -207,8 +208,14 @@ onload=function(){
                     $(".popup-report").css({"display":"none"});
                 })
 
-            //report pop-up//
 
-            //share button//
+            //share popup
+
+            $(".share").click(function() {
+                $(".popup-share").css({"display":"block"});
+                $(".shadow").css({"opacity":"100%"});
+                $(".shadow").css({"visibility":"visible"});
+            })
             
-              //share button//
+            
+            
