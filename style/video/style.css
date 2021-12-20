@@ -878,6 +878,19 @@ figcaption {
     height: 100vh;
 }
 
+.shadow_share {
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.607);
+    width: 200vw;
+    height: 100vh;
+}
+
 .popup-report h6 {
     color: white;
     font-size: 15px;
