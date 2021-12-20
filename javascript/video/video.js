@@ -21,6 +21,7 @@ onload=function(){
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)
  ){
+     // Share mobile function
     $(".share").click(function() {
         if (navigator.share) {
             navigator.share({
@@ -31,8 +32,9 @@ onload=function(){
               .then(() => console.log('Successful share'))
               .catch((error) => console.log('Error sharing', error));
 
+            // for popups
             $(".popup-share").css({"display" : "none"});
-            $(".s_share").css({"display" : "none"});
+            $(".shadow_share").css({"display" : "none"});
           }
     }) // on mobile
   }
@@ -213,9 +215,15 @@ onload=function(){
             //share popup
 
             $(".share").click(function() {
-                $(".popup-share").css({"visibility":"visibility"});
-                $(".s_share").css({"opacity":"100%"});
-                $(".s_share").css({"visibility":"visible"});
+                $(".popup-share").css({"visibility":"visible"});
+                $(".shadow_share").css({"opacity":"100%"});
+                $(".shadow_share").css({"visibility":"visible"});
+            })
+
+            $(".shadow_share").click(function() {
+                $(".shadow_share").css({"visibility":"hidden"});
+                $(".shadow_share").css({"opacity":"0%"});
+                $(".popup-share").css({"visibility":"hidden"});
             })
             
             
