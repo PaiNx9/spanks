@@ -11,38 +11,16 @@ onload=function(){
 }
 
  // Detect Mobile
-
- $( document ).ready(function() {
-    if( navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)
- ){
-     // Share mobile function
-    var url = $(location).attr('href');
-    $(".share").click(function() {
-        if (navigator.share) {
-            navigator.share({
-              title: '',
-              text: '',
-              url: url,
-            })
-              .then(() => console.log('Successful share'))
-              .catch((error) => console.log('Error sharing', error));
-
-            // for popups desktop
-            $(".popup-share").css({"display" : "none"});
-            $(".shadow_share").css({"display" : "none"});
-          }
-    }) // on mobile
-  }
- else {
-    return false; // not mobile
-  }
- })
+ var url = $(location).attr('href');
+ $(".share").click(function() {
+         navigator.share({
+           title: '',
+           text: '',
+           url: url,
+         })
+           .then(() => console.log('Successful share'))
+           .catch((error) => console.log('Error sharing', error));
+       })
 
     // init page
 
