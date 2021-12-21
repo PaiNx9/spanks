@@ -48,9 +48,6 @@ onload=function(){
 
     // like function
 
-            const mil = " mil";
-            const nt = "";
-            mi = " mi"
             cont = 0;
             $( ".like" ).click(function() {  
                 if(cont == 0)
@@ -166,7 +163,7 @@ onload=function(){
                     $('html, body').animate({
                         scrollTop: $(".title").offset().top
                       }, 500);
-                $(".btn-post").prop('disabled')
+            $(".btn-post").prop('disabled')
                   }
             else {
                 opening = false
@@ -214,17 +211,38 @@ onload=function(){
 
 
             //share popup
-
+            var url = $(location).attr('href');
             $(".share").click(function() {
+                $("#url_copy").val(url);
                 $(".popup-share").css({"visibility":"visible"});
                 $(".shadow_share").css({"opacity":"100%"});
                 $(".shadow_share").css({"visibility":"visible"});
+
             })
 
             $(".shadow_share").click(function() {
                 $(".shadow_share").css({"visibility":"hidden"});
                 $(".shadow_share").css({"opacity":"0%"});
                 $(".popup-share").css({"visibility":"hidden"});
+                $(".alert_copy").css({"visibility" : "hidden"});
+            })
+
+            $(".close_popup_share").click(function() {
+                $(".shadow_share").css({"visibility":"hidden"});
+                $(".shadow_share").css({"opacity":"0%"});
+                $(".popup-share").css({"visibility":"hidden"});
+                $(".alert_copy").css({"visibility" : "hidden"});
+            })
+
+            alert_copy = false;
+            $(".copy_url").click(function() {
+                $('#url_copy').select();
+                var ok = document.execCommand('copy');
+                if (alert_copy == false)  
+                { 
+                $(".alert_copy").css({"visibility" : "visible"});
+                $(".alert_copy").fadeIn( 400 ).delay(900).fadeOut( 400 ); 
+            }
             })
             
             
