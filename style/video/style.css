@@ -942,7 +942,7 @@ figcaption {
 .popup-share {
     position: fixed;
     z-index: 20;
-    top: 35%;
+    top: 32%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(43, 43, 43);
