@@ -248,12 +248,13 @@ input::placeholder {
 
 .welcome-header {
     position: absolute;
-    top: 25px;
+    top: 27px;
     margin-left: 80%;
     margin-right: 0px;
     color: aliceblue;
     width: 950px;
     display: inline-flex;
+    font-size: 14px;
 }
 
 .welcome-login {

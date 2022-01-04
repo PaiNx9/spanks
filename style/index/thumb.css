@@ -187,3 +187,8 @@ figcaption {
     opacity: 100%;
     visibility: visible;
 }
+
+
+.checking {
+    user-select: none;
+}

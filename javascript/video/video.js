@@ -130,8 +130,6 @@ onload=function(){
         $(".dislike-slider").css({"width" : "0%"});
     }
 
-            //dislike function//
-
             //navbar
             function menubar(){
             if ($(this).toggle('.menu-drw').toggle) {
@@ -151,7 +149,6 @@ onload=function(){
                 $(".menu-drw").css({"visibility" : "hidden"});
                 $(".menu-drw").css({"opacity" : "0"});
                 }}
-             //navbar
         
             //open comments
                 opening = false;
