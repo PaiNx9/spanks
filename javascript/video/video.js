@@ -168,7 +168,6 @@ onload=function(){
                   }
             });
 
-
             $(".btn-post").click(function() {
                 $('#cmt').val("");
                 $(".btn-post").prop('disabled',true)
@@ -177,13 +176,9 @@ onload=function(){
                 $(".alert-confirm").fadeIn( 400 ).delay(900).fadeOut( 400 );
             })
 
-            $('#cmt').on('input', function() { 
-             
-            });
-            
             $('#cmt').on('keyup input', function() { 
                 $(this).css('height', 'auto').css('height', this.scrollHeight + (this.offsetHeight - this.clientHeight));
-                $(".btn-post").prop('disabled', ($(this).val().value == ("")))
+                $(".btn-post").prop('disabled', ($(this).val() == ''))
                 });
             //open comments//
 

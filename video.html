@@ -221,7 +221,7 @@
         <video muted controls data-poster="" class="vid1">
         <!-- Video files -->
         <source class="here" title="fsfsfsdf" src="video/1. BABY Internet ft Jotapills - 667 casa bomba_720P HD.mp4" type="video/mp4"  size="360" />
-        <source src="video/" type="video/mp4" size="720">
+        <source src="video/Massaru, Igão - Marcha 2 (Prod. Celo) - EP Ⓜ️_360P.mp4" type="video/mp4" size="720">
       </video>
       </div>
       <div class="infos-vid">
@@ -238,12 +238,12 @@
           <div class="rating">
             <div class="like">
                 <i class="gg-smile-mouth-open"></i>
-                <input name="r" disabled value="10" id="counter-like">
+                <input name="r" disabled value="0" id="counter-like">
                 <figcaption>Marcar como "Gostei"</figcaption>
             </div>
             <div class="dislike">
                 <i class="gg-smile-sad"></i>
-                <input name="d" disabled id="counter-dislike" value="10" >
+                <input name="d" disabled id="counter-dislike" value="0" >
                 <figcaption>Marcar como "Não Gostei"</figcaption>
             </div>
         </div>
@@ -321,7 +321,9 @@
           <div class="comment-channel">
             <div class="profile-channel-cm"><a class="channel-link" href="channel.html"><div class="cover-image"><img src="img/comprimidos/profile/41d9ee3ac88950e031ed29d5d6e61857.jpg" class="img-channel" alt=""></div>
               <p class="title-channel">p@1Nn.ex3</a><p class="followers-channel">193 mil inscritos</p></p>
+              <form method="POST" action="#" onSubmit="return checadatas()" name="acess">
               <textarea onKeyup="checkform()" id="cmt" maxlength="1000" rows="1" spellcheck="true" placeholder="Comente aqui" type="text"></textarea>
+            </form>
               <input class="btn-post" disabled="disabled" id="submitbutton" type="submit" value="Postar">
               <div class="alert-confirm">Comentario adicionado</div>
               <div class="others-comments">
@@ -360,7 +362,7 @@
   />
       </svg>
       </div>
-      <h6>Motivo da denuncia:</h6>
+      <h6>Motivo da denuncia</h6>
       <div class="sub_grp_popup">
       <p>Pornografia infantil<input name="report" type="radio"></p>
       <p>Spam<input name="report" class="customize green" checked type="radio" ></p>
@@ -665,19 +667,22 @@
 
 
       :root {
-      --plyr-color-main: rgb(92,22,197);
+      --plyr-color-main: rgba(95, 0, 238, 0);
+      --plyr-color-main-icon-vid:  rgba(0, 0, 0, 0.650);
+      --plyr-color-main-bar:  rgb(92,22,197);
+      --plyr-color-maini: rgb(57, 197, 22);
         --plyr-video-control-color  :#cccccc;
         --plyr-control-icon-size: 20px;
         --plyr-font-size-time: 15px;
         --plyr-video-range-track-background: rgba(255, 255, 255, 0.452);
         --plyr-range-thumb-height: 11px;
-        
+        --plyr-control-toggle-checked-background:  rgb(92,22,197);
     }
      
     @media (max-width:1000px) {
         :root {
-        --plyr-control-icon-size: 18px;
-        --plyr-font-size-time: 14px;
+        --plyr-control-icon-size: 15px;
+        --plyr-font-size-time: 13px;
         --plyr-range-track-height: 5px;
     }
     }

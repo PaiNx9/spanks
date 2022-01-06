@@ -25,6 +25,11 @@ section {
     user-select: none;
 }
 
+
+.title {
+    font-size: 18px;
+}
+
 @media (max-width:1000px) {
     .playerr {
         top: 70px;
@@ -335,7 +340,6 @@ figcaption {
     top: 9px;
     transform: scaleY(-1)
 } 
-
 
    /* like part >> */
    .gg-smile-mouth-open {
