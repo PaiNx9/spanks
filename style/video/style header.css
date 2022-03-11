@@ -11,7 +11,7 @@ html body {
     background-color: rgb(27,27,27);
     overflow-x: hidden;
     scroll-behavior: smooth;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html body::-webkit-scrollbar {
@@ -320,7 +320,6 @@ input::placeholder {
 
     input {
         width: 35vh;
-       
         margin-right: 4px;
     }
     

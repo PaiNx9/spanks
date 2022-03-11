@@ -44,10 +44,62 @@ onload=function(){
   }
  })
 
+$( document ).ready(function() {
+    //like counter (input) size
+    if ($("#counter-like").val().length == 1) {
+        $("#counter-like").css({"width" : "1.2rem"});
+    }
+    if ($("#counter-like").val().length == 2) {
+        $("#counter-like").css({"width" : "1.7rem"});
+    }
+
+    if ($("#counter-like").val().length == 3) {
+        $("#counter-like").css({"width" : "2.1rem"});
+    }
+
+    if ($("#counter-like").val().length == 4) {
+        $("#counter-like").css({"width" : "2.4rem"});
+    }
+
+    if ($("#counter-like").val().length == 5) {
+        $("#counter-like").css({"width" : "2.57rem"});
+    }
+
+    if ($("#counter-like").val().length == 6) {
+        $("#counter-like").css({"width" : "2.75rem"});
+    }
+
+    //dislike counter (input) size
+    if ($("#counter-dislike").val().length == 1) {
+        $("#counter-dislike").css({"width" : "1.2rem"});
+    }
+    if ($("#counter-dislike").val().length == 2) {
+        $("#counter-dislike").css({"width" : "1.7rem"});
+    }
+
+    if ($("#counter-dislike").val().length == 3) {
+        $("#counter-dislike").css({"width" : "2.1rem"});
+    }
+
+    if ($("#counter-dislike").val().length == 4) {
+        $("#counter-dislike").css({"width" : "2.4rem"});
+    }
+
+    if ($("#counter-dislike").val().length == 5) {
+        $("#counter-dislike").css({"width" : "2.57rem"});
+    }
+
+    if ($("#counter-dislike").val().length == 6) {
+        $("#counter-dislike").css({"width" : "2.75rem"});
+    }
+ })
+
     // init page
 
     // like function
 
+    //Counter size (input)//
+        //Counter Likes input
             cont = 0;
             $( ".like" ).click(function() {  
                 if(cont == 0)
@@ -236,6 +288,177 @@ onload=function(){
                 $(".alert_copy").fadeIn( 400 ).delay(900).fadeOut( 400 ); 
             }
             })
+            
+
+            "use strict";
+
+            let hour = 0;
+            let minute = 0;
+            let second = 0;
+            let millisecond = 0;
+            let cron;
+            
+                var timer_ = false;
+            $(".start_").click(function() {
+                if (timer_ == false) {
+                  timer_ = true;
+                  start();
+                }
+                else {
+                  timer_ = false
+                  pause();
+                }
+            })
+            
+            function start() {
+              pause();
+              cron = setInterval(() => { timer(); }, 10);
+            }
+            
+            function pause() {
+              clearInterval(cron);
+            }
+            
+            function timer() {
+              if ((millisecond += 10) == 1000) {
+                millisecond = 0;
+                second++;
+              }
+              
+              if (second == 60) {
+                second = 0;
+                minute++;
+              }
+            
+              if (minute == 60) {
+                minute = 0;
+                hour++;
+              }
+            
+              document.getElementById('second').value = returnData(second);
+            }
+            
+            function returnData(input) {
+              return input > -1 ? input : `0${input}`
+            }
+            
+            get_ = $(".here");
+            durations = get_durations.duration;
+            
+            function returnData(input) {
+              if (second ==  $(".time").val()) {
+                alert(durations)
+              }
+            }
+            
+            
+            $(document).ready(function()  {
+                if ($(".receive_time_min").val() < 1) {
+                  calcular()
+                  start();
+                }
+                else {
+                  calcularmin()
+                  start();
+            }})
+            
+            
+            function calcular() {
+              var calc = $(".timersec_video").val()
+            
+              if (calc > 4 ) {
+                $(".time").val(3)
+              }
+              
+              if (calc > 9 ) {
+                $(".time").val(3)
+              }
+            
+              if (calc > 10) {
+                $(".time").val(4)
+              }
+            
+              if (calc > 15) {
+                $(".time").val(7)
+              }
+            
+              if (calc > 20) {
+                $(".time").val(7)
+              }
+            
+              if (calc > 24) {
+                $(".time").val(7)
+              }
+            
+              if (calc > 29) {
+                $(".time").val(10)
+              }
+            
+              if (calc > 34) {
+                $(".time").val(10)
+              }
+            
+              if (calc > 40) {
+                $(".time").val(12)
+              }
+            
+              if (calc > 49) {
+                $(".time").val(12)
+              }
+            
+              if (calc > 55) {
+                $(".time").val(13)
+              }
+            
+            }
+            
+            function calcularmin() {
+              var calc = $(".timersec_video").val()
+            
+              if (calc > 4 ) {
+                $(".time").val(13)
+              }
+              if (calc > 9 ) {
+                $(".time").val(13)
+              }
+            
+              if (calc > 10) {
+                $(".time").val(13)
+              }
+            
+              if (calc > 15) {
+                $(".time").val(14)
+              }
+            
+              if (calc > 20) {
+                $(".time").val(14)
+              }
+            
+              if (calc > 24) {
+                $(".time").val(15)
+              }
+            
+              if (calc > 29) {
+                $(".time").val(15)
+              }
+            
+              if (calc > 34) {
+                $(".time").val(15)
+              }
+            
+              if (calc > 40) {
+                $(".time").val(15)
+              }
+            
+              if (calc > 49) {
+                $(".time").val(15)
+              }
+            
+              if (calc > 55) {
+                $(".time").val(15)
+              }
+            
+            }
             
             
             

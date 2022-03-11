@@ -24,15 +24,17 @@
 <!--here--><input value="1" class="receive_time_min">
 
 <div id="video_container">
-  <video autoplay muted poster="http://media.w3.org/2010/05/sintel/poster.png" preload="none" controls="" id="video" tabindex="0">
-      <source type="video/mp4" src="video/Massaru, Igão - Marcha 2 (Prod. Celo) - EP Ⓜ️_360P.mp4" id="mp4"></source>
+  <video poster="http://media.w3.org/2010/05/sintel/poster.png" preload="none" controls="" id="video" tabindex="0">
+      <source type="video/mp4" src="video/1. BABY Internet ft Jotapills - 667 casa bomba_720P HD.mp4" id="mp4"></source>
       <p>Your user agent does not support the HTML5 Video element.</p>
   </video>
   </div>
   
-  <div class="currentTime">Current Time : <span  id="currentTime">0</span></div>
+  <div>Current Time : <span  id="currentTime">0</span></div>
   <div>Total time : <span id="totalTime">0</span></div>
   <div class="result"></div>
+
+
 
     <form name="calcform" action="Calc()" method="post">
       <input value="20" class="timersec_video">
@@ -45,14 +47,17 @@
 
 <script>
 
-setInterval(function(){
-  var minutes = $('#video_container').find('video').get(0).duration / 60; 
-  var seconds = $('#currentTime').html(($('#video_container').find('video').get(0).duration % 60).toFixed(0));
-  var resultmin = $('#totalTime').html(minutes.toFixed(0));
+$(function(){
+$('#currentTime').html($('#video_container').find('video').get(0).load());
+$('#currentTime').html($('#video_container').find('video').get(0).play());
 })
+setInterval(function(){
+$('#currentTime').html($('#video_container').find('video').get(0).currentTime.toFixed(0));
+$('#totalTime').html($('#video_container').find('video').get(0).duration/60);    
+},500)
 
 
-"use strict";
+      "use strict";
 
 let hour = 0;
 let minute = 0;

@@ -220,7 +220,7 @@
       <div id="container">
         <video muted controls data-poster="" class="vid1">
         <!-- Video files -->
-        <source class="here" title="fsfsfsdf" src="video/1. BABY Internet ft Jotapills - 667 casa bomba_720P HD.mp4" type="video/mp4"  size="360" />
+        <source class="vidd" src="video/1. BABY Internet ft Jotapills - 667 casa bomba_720P HD.mp4" type="video/mp4"  size="360" />
         <source src="video/Massaru, Igão - Marcha 2 (Prod. Celo) - EP Ⓜ️_360P.mp4" type="video/mp4" size="720">
       </video>
       </div>
@@ -657,6 +657,33 @@
 </div>
 </section>
 
+<div class="ativa_timer">
+
+  <form name="form_main">
+  <div>
+    <span id="hour">00</span>:<span id="minute">01</span>:<span id="second">00</span>
+  </div>
+
+  <br />
+  <button class="start_" type="button" name="start">start / pause</button>
+</form>
+
+<!--here-->minuto <br> <input value="0" class="receive_time_min">
+
+<div class="get time"></div>
+
+    <form name="calcform" action="Calc()" method="post">
+      segundo <br>
+      <input value="48" class="timersec_video">
+      <br>
+      retenção <br>
+          <input name="result" value="60" class="time" id="">
+    </form>
+
+<br>
+<button style="height: 20px; width: fit-content;" onclick="calcular()">calcular</button>
+</div>
+
 <!--                                 -->
 <!--        _/﹋\_                   -->
 <!--        (҂`_´)                   -->
@@ -681,18 +708,12 @@
      
     @media (max-width:1000px) {
         :root {
-        --plyr-control-icon-size: 15px;
+        --plyr-control-icon-size: 16px;
         --plyr-font-size-time: 12px;
         --plyr-range-track-height: 3.8px;
     }}
     
     </style>
-
-<!--                                 -->
-<!--        _/﹋\_                   -->
-<!--        (҂`_´)                   -->
-<!--        <,︻╦╤─ ҉ - -  @Pa1N.ex3 -->
-<!--        _/﹋\_                   -->
 
 <script>
     controls =
