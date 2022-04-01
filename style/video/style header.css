@@ -12,6 +12,7 @@ html body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transform: scale(0.90);
 }
 
 html body::-webkit-scrollbar {
