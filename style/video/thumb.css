@@ -73,6 +73,7 @@
 
     .thumb-sz {
         height: 12vmax;
+        min-height: 12vmax;
     }
 
 }
@@ -80,10 +81,10 @@
 @media (max-width:890px) {
     .thumb-sz {
         height: 14.5vmax;
+        min-height: 14.5vmax;
     }
 
     .grid-thumbs {
-
         grid-template-columns: repeat(3, 27vmax);
         grid-template-rows: repeat(10, 22vmax);
     }
@@ -92,10 +93,10 @@
 @media (max-width:800px) {
     .thumb-sz {
         height: 13vmax;
+        min-height: 13vmax;
     }
 
     .grid-thumbs {
-
         grid-template-columns: repeat(3, 24vmax);
         grid-template-rows: repeat(10, 22vmax);
     }
@@ -104,10 +105,10 @@
 @media (max-width:700px) {
     .thumb-sz {
         height: 16vmax;
+        min-height: 16vmax;
     }
 
     .grid-thumbs {
-
         grid-template-columns: repeat(2, 31vmax);
         grid-template-rows: repeat(10, 23vmax);
     }
@@ -116,6 +117,7 @@
 @media (max-width:650px) {
     .thumb-sz {
         height: 13vmax;
+        min-height: 13vmax;
     }
 
     .grid-thumbs {
@@ -127,10 +129,10 @@
 @media (max-width:500px) {
     .thumb-sz {
         height: 25vmax;
+        min-height: 25vmax;
     }
 
     .grid-thumbs {
-
         grid-template-columns: repeat(1, 45vmax);
         grid-template-rows: repeat(10, 35vmax);
     }
@@ -139,6 +141,7 @@
 @media (max-width:350px) {
     .thumb-sz {
         height: 22vmax;
+        min-height: 22vmax;
     }
 
     .grid-thumbs {
